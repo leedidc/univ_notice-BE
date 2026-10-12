@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>마이페이지</title>
+    <link rel="stylesheet" href="/css/mypage.css" />
+  </head>
+  <body style="display: none">
+    <div class="mypage-container">
+      <div class="top-buttons">
+        <button onclick="location.href='/'" class="nav-button">
+          메인페이지로
+        </button>
+        <button id="logoutBtn" class="nav-button logout">로그아웃</button>
+      </div>
+
+      <h2>마이페이지</h2>
+
+      <div class="keyword-section">
+        <input type="text" id="keywordInput" placeholder="키워드 입력" />
+        <button id="addKeywordBtn">등록</button>
+      </div>
+
+      <ul id="keywordList"></ul>
+
+      <div class="account-section">
+        <h3>비밀번호 수정</h3>
+        <input type="password" id="currentPw" placeholder="현재 비밀번호" />
+        <input type="password" id="newPw" placeholder="새 비밀번호" />
+        <input
+          type="password"
+          id="confirmNewPw"
+          placeholder="새 비밀번호 확인"
+        />
+        <button id="updatePwBtn">비밀번호 수정</button>
+
+        <h3>회원 탈퇴</h3>
+        <button id="deleteAccountBtn" class="delete-btn">회원 탈퇴</button>
+
+        <p id="accountMsg" class="error-msg"></p>
+      </div>
+    </div>
+
+    <script src="/js/mypage.js"></script>
+  </body>
+</html>

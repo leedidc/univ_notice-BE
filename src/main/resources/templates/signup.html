@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>회원가입</title>
+    <link rel="stylesheet" href="/css/signup.css" />
+  </head>
+  <body>
+    <div class="signup-container">
+      <h2>회원가입</h2>
+      <form id="signupForm">
+        <input type="text" id="id" placeholder="아이디" required />
+        <input type="email" id="email" placeholder="이메일" required />
+        <input type="text" id="school" placeholder="학교명" required />
+        <input type="text" id="department" placeholder="학과명" required />
+        <input type="password" id="password" placeholder="비밀번호" required />
+        <input
+          type="password"
+          id="confirmPassword"
+          placeholder="비밀번호 확인"
+          required
+        />
+        <button type="submit">가입하기</button>
+      </form>
+      <p id="errorMsg"></p>
+    </div>
+    <script src="/js/signup.js"></script>
+  </body>
+</html>
